@@ -7,6 +7,9 @@ pull:
 deploy: pull
 	$(COMPOSE) up -d --scale backend=4
 
+up:
+	$(COMPOSE) up -d
+
 scale:
 	$(COMPOSE) up -d --scale backend=$(N)
 
